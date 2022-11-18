@@ -5,9 +5,177 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 2000px;
+  background-color: #fafafa;
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+*{
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body{
+  background: #f5f6fa;
+}
+
+.wrapper .sidebar{
+  background: #36474f;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  padding: 20px 0;
+  transition: all 0.5s ease;
+}
+.wrapper .sidebar .profile{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.wrapper .sidebar .profile img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.wrapper .sidebar .profile h3{
+    color: #ffffff;
+    margin: 10px 0 5px;
+}
+
+.wrapper .sidebar .profile p{
+    color: rgb(206, 240, 253);
+    font-size: 14px;
+}
+
+.wrapper .sidebar ul li a{
+  display: block;
+  padding: 13px 30px;
+  border-bottom: 1px solid #10558d;
+  color: rgb(241, 237, 237);
+  font-size: 16px;
+  position: relative;
+}
+
+.wrapper .sidebar ul li a .icon{
+  color: #dee4ec;
+  width: 30px;
+  display: inline-block;
+}
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+    color: #0c7db1;
+
+    background:white;
+    border-right: 2px solid rgb(5, 68, 104);
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+    color: #0c7db1;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+    display: block;
+}
+.wrapper .section{
+  width: calc(100% - 225px);
+  margin-left: 225px;
+  transition: all 0.5s ease;
+}
+
+.wrapper .section .top_navbar{
+  background: rgb(7, 105, 185);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+
+}
+#main_img{
+  width: 100%; height: 800px;
+
+  /* 배경이미지는 최소 1920*960으로 제작해야 문제가 안생김 */
+
+  background-repeat: no-repeat; /* 배경이미지X */
+  background-size: cover; /* 요소를 비율에 맞게 커버 */
+  background-position: center; /* 이미지를 요소의 정가운데로 처리 */
+  
+  background-attachment: fixed;
+}
+#main_img_text{
+  position: absolute;
+  font-size: 45px;
+  top: 80%;
+  left: 28%;
+  color: #fafafa;
+  text-shadow: 4px 2px 2px gray;
+  
+}
+
+#about_me{
+  
+  margin-top: 5%;
+  position: relative;
+
+  left:25%;
+  color: #36474f;
+  font-size: 30px;
+}
+#profile_img{
+  float: left;
+  position: relative;
+  left:25%;
+  width:300px;
+  height: 300px;
+
+}
+#about_me_content{
+  position: relative;
+  float:left;
+  left:30%;
+  color: #36474f;
+}
+
+
+#name{
+  
+  clear: both;
+  left:25%;
+  position: relative;
+  top:5%;
+  font-size: 25px;
+  color: #36474f;
+}
+#edu_wrapper{
+  position: relative;
+  top:7%;
+}
+#edu_section1{
+  float: left;
+  position: relative;
+  top:5%;
+  left:25%;
+}
+#edu_section2{
+  position: relative;
+  right: 15%;
+  float:right;
+  
 }

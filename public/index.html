@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
@@ -26,8 +26,9 @@
     -->
     <title>React App</title>
   </head>
-  <body>
+  <body style="overflow-x: hidden"> 
     <noscript>You need to enable JavaScript to run this app.</noscript>
+
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -39,5 +40,129 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <div class="wrapper">
+      <!--Top menu -->
+      
+      <div class="sidebar">
+         <!--profile image & text-->
+          <!--menu item-->
+          <div class="profile">
+            <img src="code.png">
+            <h3>김건휘</h3>
+            <p>개발자</p>
+          </div>
+          <ul>
+            <li>
+              <a href="#" class="active">
+              <span class="icon"><i class="fas fa-home"></i></span>
+              <span class="item">Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+              <span class="icon"><i class="fas fa-desktop"></i></span>
+              <span class="item">About Me</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+              <span class="icon"><i class="fas fa-user-friends"></i></span>
+              <span class="item">Educational</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+              <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+              <span class="item">Perfomance</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+              <span class="icon"><i class="fas fa-database"></i></span>
+              <span class="item">Portfolio</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+              <span class="icon"><i class="fas fa-chart-line"></i></span>
+              <span class="item">Contact</span>
+              </a>
+            </li>
+      
+          </ul>
+        </div>
+      </div>
+      <div id = "main_img_div">
+        <img src= "code2.jpeg" id = "main_img" >
+        
+          <h1 id="main_img_text">I like CODING</h1>
+      </div>
+      <section>
+      <div id="about_me">
+        <h1>About Me</h1>
+      </br>
+      </div>
+      <div>
+        <img src = "code.png" id = "profile_img"> 
+       
+      </div>
+
+        <div id="about_me_content">
+          <h2>> 열심히 노력하는 개발자 김건휘입니다.</br></br></h2>
+          <h3>> 시작은 미약하지만 끝은 창대하리라.</br></br></h3>
+          <h3>> 끊임없이 노력하여 성공하는 개발자가 되고 싶습니다.</br>
+            어느 곳에 가서도 천천히 스며드는 사람이 되겠습니다.</br>
+            중간에 포기하지 않고 끝까지 같이 갈 수 있는 개발자가 되겠습니다.</br></br></br>
+          </h3>
+          <p>> Full Name : 김건휘</p>
+        </br>
+          <p>> Phone : 01065557199</p>
+        </br>
+          <p>> E-mail : kimkeonhwi991231@gmail.com</p>
+        </div>
+      </section>
+      <div id="name"><h1 >My Education && Activity</h1></div>
+      <div id="edu_wrapper">
+        <section id = "edu_section1">
+            <h1>Education</h1><br>
+            <h3>2015 ~ 2017</h3></br><h4>  -  한국디지털미디어고등학교 입학</h4></br>
+            <h3>2018 ~ </h3></br><h4> - 동국대학교 서울캠퍼스 입학</h4></br>
+            <h4>&nbsp&nbsp&nbsp > C언어를 활용하여 자료구조, 알고리즘 학습하였으며 </br>
+              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp C#을 활용하여 게임개발을 배웠습니다. <br>
+              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 데이터베이스는 Mysql을 학습하였습니다. <br><br><br></h4>
+              
+            
+            <h4> &nbsp&nbsp&nbsp > language<br></h4> 
+            <h4>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - C</h4>
+            <h4>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - C#</h4>
+            <h4>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - C++</h4>
+            <h4>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Dart</h4>
+            <h4>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Python</h4>
+            <h4>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - JavaScript</h4><br>
+            <h4> &nbsp&nbsp&nbsp > Database<br></h4> 
+            <h4>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Mysql</h4>
+          
+      </section>
+      
+      <section id = "edu_section2">
+        <div id = "edu_act_content2">
+          <h1>Activity</h1><br>
+          <h3>2022년 2월 ~ </h3></br><h4>  -  동국창업센터 창업동어리 동아리활동(앱개발)</h4></br>
+          <h3>2022년 10 ~ </h3></br><h4> - 명상 도우미 어플 앱개발 프로젝트</h4></br>
+          <h4>&nbsp&nbsp&nbsp > C언어를 활용하여 자료구조, 알고리즘 학습하였으며 </br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp C#을 활용하여 게임개발을 배웠습니다. <br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 데이터베이스는 Mysql을 학습하였습니다. <br><br><br></h4>
+          <h4> &nbsp&nbsp&nbsp > language<br></h4> 
+          <h4>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - C</h4>
+          <h4>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - C#</h4>
+          <h4>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - C++</h4>
+          <h4>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Dart</h4>
+          <h4>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Python</h4>
+          <h4>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - JavaScript</h4><br>
+          <h4> &nbsp&nbsp&nbsp > Database<br></h4> 
+          <h4>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Mysql</h4>
+        </div>
+    </section>
+</div>
   </body>
 </html>
